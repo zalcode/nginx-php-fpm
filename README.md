@@ -1,14 +1,14 @@
 ## nginx-php-fpm - [![build](https://github.com/richarvey/nginx-php-fpm/actions/workflows/build_images.yml/badge.svg)](https://github.com/richarvey/nginx-php-fpm/actions/workflows/build_images.yml) ![docker hub](https://img.shields.io/docker/pulls/richarvey/nginx-php-fpm.svg) ![docker hub](https://img.shields.io/docker/stars/richarvey/nginx-php-fpm.svg) ![Github](https://img.shields.io/github/stars/richarvey/nginx-php-fpm.svg) ![docker version](https://img.shields.io/docker/v/richarvey/nginx-php-fpm?sort=semver)
 
 ## Overview
-This is a Dockerfile/image to build a container for nginx and php-fpm, with the ability to pull website code from git when the container is created, as well as allowing the container to push and pull changes to the code to and from git. The container also has the ability to update templated files with variables passed to docker in order to update your code and settings. There is support for lets encrypt SSL configurations, custom nginx configs, core nginx/PHP variable overrides for running preferences, X-Forwarded-For headers and UID mapping for local volume support.
+This is a Dockerfile/image to build a container for nginx and php-fpm, optimized for running Laravel applications in a production environment. The container has the ability to pull website code from git when it's created, as well as pushing and pulling changes to/from git. The container also supports updating templated files with variables passed to docker to update code and settings. There is support for Let's Encrypt SSL configurations, custom nginx configs, core nginx/PHP variable overrides, X-Forwarded-For headers and UID mapping for local volume support.
 
 If you have improvements or suggestions please open an issue or pull request on the GitHub project page.
 
 ### Versioning
 | Docker Tag | Git Release | Nginx Version | PHP Version | Alpine Version |
 |-----|-------|-----|--------|--------|
-| latest/![docker version](https://img.shields.io/docker/v/richarvey/nginx-php-fpm?sort=semver)| Main Branch |1.24-r6 | 8.2.7 | 3.18 |
+| latest/![docker version](https://img.shields.io/docker/v/richarvey/nginx-php-fpm?sort=semver)| Main Branch |1.24-r6 | 8.4 | 3.19 |
 
 For other tags please see: [versioning](https://github.com/richarvey/nginx-php-fpm/blob/main/docs/versioning.md)
 
@@ -58,7 +58,6 @@ For more detailed examples and explanations please refer to the documentation.
  - [Setup](https://github.com/richarvey/nginx-php-fpm/blob/main/docs/lets_encrypt.md#setup)
  - [Renewal](https://github.com/richarvey/nginx-php-fpm/blob/main/docs/lets_encrypt.md#renewal)
 - [PHP Modules](https://github.com/richarvey/nginx-php-fpm/blob/main/docs/php_modules.md)
-- [Xdebug](https://github.com/richarvey/nginx-php-fpm/blob/main/docs/xdebug.md)
 - [Logging and Errors](https://github.com/richarvey/nginx-php-fpm/blob/main/docs/logs.md)
 
 ## Guides
